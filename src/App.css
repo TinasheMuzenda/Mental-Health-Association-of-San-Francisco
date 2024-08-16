@@ -70,7 +70,7 @@ a {
   display: none;
 }
 
-.banner {
+.homeSection {
   background: var(--primary-color);
   background-position: center;
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@ a {
   display: flex;
   align-items: center;
 
-  .bannerContent {
+  .homeContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,10 +126,10 @@ M E D I A  Q U E R I E S
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  .banner {
+  .homeSection {
     background-image: url('../public/banner.jpg');
 
-    .bannerContent {
+    .homeContent {
       h1 {
         color: var(--primary-color);
       }
@@ -153,8 +153,8 @@ M E D I A  Q U E R I E S
     display: block;
   }
 
-  .banner {
-    .bannerContent {
+  .homeSection {
+    .homeContent {
       width: 55%;
     }
   }
