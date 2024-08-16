@@ -1,0 +1,174 @@
+/*phone styles*/
+button {
+  border: none;
+  width: 9rem;
+  height: 2.3rem;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mobileNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: var(--primary-color);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    picture {
+      .logo {
+        height: 1.5rem;
+      }
+    }
+    .hamburger {
+      width: 1.5rem;
+      height: 1.5rem;
+      background: blue;
+    }
+  }
+}
+
+.pcNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: var(--primary-color);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    picture {
+      .logo {
+        height: 2rem;
+      }
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+
+      a {
+        font-weight: 600;
+        font-size: 15px;
+        color: var(--main-color);
+      }
+
+      .active {
+        color: var(--secondary-color);
+        font-size: 17px;
+      }
+
+      button {
+        background: var(--main-color);
+        color: var(--primary-color);
+      }
+    }
+  }
+  display: none;
+}
+
+.banner {
+  background: var(--primary-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: none;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+
+  .bannerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      color: var(--secondary-color);
+      padding-bottom: 1rem;
+      span {
+        color: var(--main-color);
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 5%;
+
+      button {
+        background: var(--main-color);
+        color: var(--primary-color);
+      }
+    }
+  }
+}
+
+.active {
+  color: var(--secondary-color);
+  font-size: 18px;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .banner {
+    background-image: url('../public/banner.jpg');
+
+    .bannerContent {
+      h1 {
+        color: var(--primary-color);
+      }
+
+      .buttons {
+        button {
+          background: var(--primary-color);
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .mobileNav {
+    display: none;
+  }
+  .pcNav {
+    display: block;
+  }
+
+  .banner {
+    .bannerContent {
+      width: 55%;
+    }
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) {
+}

@@ -1,0 +1,17 @@
+:root{
+  --primary-color: #fff;
+  --secondary-color: #1a1919;
+  --main-color: #3d0fe0;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--primary-color);
+  color: #1a1919;
+  font-family: 'Tinashe', sans-serif;
+}
