@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 }
 
-p{
+p {
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 30px;
@@ -144,30 +144,35 @@ span {
           width: 100%;
         }
       }
-      .aboutRight{
+      .aboutRight {
         padding-top: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 6%;
 
-        .aboutSubHeading{
+        .aboutSubHeading {
           width: 100%;
 
-          h3{
+          h3 {
             font-weight: 700;
           }
         }
-        .aboutParagraph{
+        .aboutParagraph {
           width: 100%;
         }
         button {
-        background: var(--main-color);
-        color: var(--primary-color);
-      }
+          background: var(--main-color);
+          color: var(--primary-color);
+        }
       }
     }
   }
+}
+
+.volunteerSection {
+  background: var(--main-color);
+  padding: 3rem 0;
 }
 
 /*
@@ -183,17 +188,17 @@ M E D I A  Q U E R I E S
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   .aboutSection {
-  .container {
-    .aboutRow {
-      .aboutRight{
-        padding: 0 0 0 2rem;
-        .aboutSubHeading{
-          width: 40%;
+    .container {
+      .aboutRow {
+        .aboutRight {
+          padding: 0 0 0 2rem;
+          .aboutSubHeading {
+            width: 40%;
+          }
         }
       }
     }
   }
-}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -212,16 +217,16 @@ M E D I A  Q U E R I E S
   }
 
   .aboutSection {
-  .container {
-    .aboutRow {
-      .aboutRight{
-        .aboutParagraph{
-          width: 95%;
+    .container {
+      .aboutRow {
+        .aboutRight {
+          .aboutParagraph {
+            width: 95%;
+          }
         }
       }
     }
   }
-}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

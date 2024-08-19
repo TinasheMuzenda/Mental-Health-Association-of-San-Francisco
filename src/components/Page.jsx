@@ -45,6 +45,11 @@ const Page = () => {
           </div>
         </div>
       </section>
+      <section className="volunteerSection" id="volunteer">
+        <div className="container">
+          
+        </div>
+      </section>
     </>
   );
 };
