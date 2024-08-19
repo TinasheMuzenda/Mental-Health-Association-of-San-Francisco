@@ -4,11 +4,22 @@ button {
   width: 9rem;
   height: 2.3rem;
   border-radius: 30px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 a {
   text-decoration: none;
+}
+
+p{
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+span {
+  color: var(--main-color);
 }
 
 .mobileNav {
@@ -75,7 +86,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: none;
+  background-image: url("../public/banner.jpg");
   width: 100%;
   height: 90vh;
   display: flex;
@@ -90,11 +101,8 @@ a {
     h1 {
       font-weight: 700;
       font-size: 3rem;
-      color: var(--secondary-color);
+      color: var(--primary-color);
       padding-bottom: 1rem;
-      span {
-        color: var(--main-color);
-      }
     }
 
     .buttons {
@@ -102,8 +110,8 @@ a {
       gap: 5%;
 
       button {
-        background: var(--main-color);
-        color: var(--primary-color);
+        background: var(--primary-color);
+        color: var(--main-color);
       }
     }
   }
@@ -112,6 +120,54 @@ a {
 .active {
   color: var(--secondary-color);
   font-size: 18px;
+}
+
+.aboutSection {
+  padding: 3rem 0;
+
+  .container {
+    .aboutHeading {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      h2 {
+        font-weight: 700;
+      }
+    }
+
+    .aboutRow {
+      padding: 2rem 0;
+
+      .aboutLeft {
+        .aboutImage {
+          width: 100%;
+        }
+      }
+      .aboutRight{
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6%;
+
+        .aboutSubHeading{
+          width: 100%;
+
+          h3{
+            font-weight: 700;
+          }
+        }
+        .aboutParagraph{
+          width: 100%;
+        }
+        button {
+        background: var(--main-color);
+        color: var(--primary-color);
+      }
+      }
+    }
+  }
 }
 
 /*
@@ -126,22 +182,18 @@ M E D I A  Q U E R I E S
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  .homeSection {
-    background-image: url('../public/banner.jpg');
-
-    .homeContent {
-      h1 {
-        color: var(--primary-color);
-      }
-
-      .buttons {
-        button {
-          background: var(--primary-color);
-          color: var(--main-color);
+  .aboutSection {
+  .container {
+    .aboutRow {
+      .aboutRight{
+        padding: 0 0 0 2rem;
+        .aboutSubHeading{
+          width: 40%;
         }
       }
     }
   }
+}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -155,9 +207,21 @@ M E D I A  Q U E R I E S
 
   .homeSection {
     .homeContent {
-      width: 55%;
+      width: 60%;
     }
   }
+
+  .aboutSection {
+  .container {
+    .aboutRow {
+      .aboutRight{
+        .aboutParagraph{
+          width: 95%;
+        }
+      }
+    }
+  }
+}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
