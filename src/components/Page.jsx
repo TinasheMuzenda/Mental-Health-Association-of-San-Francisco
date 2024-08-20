@@ -2,6 +2,7 @@ import AboutImage from "../../public/aboutSection.jpg";
 import VolunteerHands from "../../public/volunteerHands.jpg";
 import VolunteerLove from "../../public/volunteerLove.jpg";
 import Hands from "../../public/hands.svg";
+import servicesImage from "../../public/healthNetwork.jpg";
 
 const Page = () => {
   return (
@@ -21,7 +22,7 @@ const Page = () => {
       </section>
       <section className="aboutSection" id="about">
         <div className="container">
-          <div className="aboutHeading">
+          <div className="aboutHeading headings">
             <h2>ABOUT US</h2>
           </div>
           <div className="row aboutRow">
@@ -50,25 +51,33 @@ const Page = () => {
       </section>
       <section className="volunteerSection" id="volunteer">
         <div className="container">
-          <div className="volunteerText">
+          <div className="volunteerHeading headings">
             <h2>VOLUNTEER WITH US</h2>
+          </div>
+          <div className="volunteerText">
             <p>
-              MHASF depends on the support of talented and enthusiastic volunteers to help out with an array of ongoing needs and projects. Whether you're interested in lending creative skills such as graphic design or writing, are passionate about mental health policy or advocacy issues, have a knack for administrative support, or want to pitch another way in which you'd like to help us, we want to hear from you!
+              MHASF depends on the support of talented and enthusiastic
+              volunteers to help out with an array of ongoing needs and
+              projects. Whether you're interested in lending creative skills
+              such as graphic design or writing, are passionate about mental
+              health policy or advocacy issues, have a knack for administrative
+              support, or want to pitch another way in which you'd like to help
+              us, we want to hear from you!
             </p>
           </div>
           <div className="row">
-            <div className="col-md-5">
+            <div className="col-md-5 volunteerSides">
               <img
                 src={VolunteerHands}
                 alt="volunteering"
                 className="volunteerImages"
               />
             </div>
-            <div className="col-md-2">
+            <div className="col-md-2 volunteerCenter">
               <img src={Hands} alt="volunteering" className="volunteerImages" />
               <p>Lend a hand</p>
             </div>
-            <div className="col-md-5">
+            <div className="col-md-5 volunteerSides">
               <img
                 src={VolunteerLove}
                 alt="volunteering"
@@ -80,7 +89,32 @@ const Page = () => {
       </section>
       <section className="servicesSection" id="services">
         <div className="container">
-          
+          <div className="servicesHeading headings">
+            <h2>OUR SERVICES</h2>
+          </div>
+          <div className="row">
+            <div className="col-md-6 servicesLeft">
+              <h3>
+                <span>Department of Education & Innovation</span>
+              </h3>
+              <p>
+                The Department of Education & Innovation empowers individuals
+                with lived experience through workforce development services,
+                offers evidence-based mental health trainings to professionals,
+                and enhances digital access in underserved communities. Our
+                commitment to advocacy, innovation, training, and workforce
+                development aims to foster autonomy and resilience among diverse
+                populations.
+              </p>
+            </div>
+            <div className="col-md-6 servicesRight">
+              <img
+                src={servicesImage}
+                alt="San Francisco Health Network"
+                className="servicesImage"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </>
