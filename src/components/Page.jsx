@@ -1,4 +1,7 @@
 import AboutImage from "../../public/aboutSection.jpg";
+import VolunteerHands from "../../public/volunteerHands.jpg";
+import VolunteerLove from "../../public/volunteerLove.jpg";
+import Hands from "../../public/hands.svg";
 
 const Page = () => {
   return (
@@ -47,7 +50,32 @@ const Page = () => {
       </section>
       <section className="volunteerSection" id="volunteer">
         <div className="container">
-          
+          <div className="volunteerText">
+            <h2>VOLUNTEER WITH US</h2>
+            <p>
+              MHASF depends on the support of talented and enthusiastic volunteers to help out with an array of ongoing needs and projects. Whether you're interested in lending creative skills such as graphic design or writing, are passionate about mental health policy or advocacy issues, have a knack for administrative support, or want to pitch another way in which you'd like to help us, we want to hear from you!
+            </p>
+          </div>
+          <div className="row">
+            <div className="col-md-5">
+              <img
+                src={VolunteerHands}
+                alt="volunteering"
+                className="volunteerImages"
+              />
+            </div>
+            <div className="col-md-2">
+              <img src={Hands} alt="volunteering" className="volunteerImages" />
+              <p>Lend a hand</p>
+            </div>
+            <div className="col-md-5">
+              <img
+                src={VolunteerLove}
+                alt="volunteering"
+                className="volunteerImages"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </>

@@ -13,7 +13,6 @@ a {
 
 p {
   font-weight: 500;
-  letter-spacing: 1px;
   line-height: 30px;
   font-size: 20px;
 }
@@ -172,7 +171,40 @@ span {
 
 .volunteerSection {
   background: var(--main-color);
+  color: var(--primary-color);
   padding: 3rem 0;
+
+  .container{
+    .volunteerText{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      h2{
+        font-weight: 700;
+      }
+    }
+    .row{
+      padding-top: 1rem;
+      .col-md-5{
+        .volunteerImages{
+          width: 100%;
+          box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+        }
+      }
+      .col-md-2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+
+        img{
+          width: 5rem;
+        }
+      }
+    }
+  }
 }
 
 /*
