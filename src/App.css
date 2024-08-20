@@ -234,6 +234,11 @@ span {
   }
 }
 
+.warmLine{
+  padding: 3rem 0;
+  background: var(--background-color);
+}
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
