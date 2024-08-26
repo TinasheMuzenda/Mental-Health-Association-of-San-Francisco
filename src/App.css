@@ -1,36 +1,4 @@
 /*phone styles*/
-button {
-  border: none;
-  width: 9rem;
-  height: 2.3rem;
-  border-radius: 30px;
-  font-weight: 700;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  font-weight: 500;
-  line-height: 30px;
-  font-size: 20px;
-}
-
-span {
-  color: var(--main-color);
-}
-
-.headings {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-
-      h2 {
-        font-weight: 700;
-      }
-    }
-
 .mobileNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -136,7 +104,7 @@ span {
 
   .container {
     .aboutRow {
-      padding: 2rem 0;
+      padding-top: 2rem;
 
       .aboutLeft {
         .aboutImage {
@@ -176,7 +144,7 @@ span {
 
   .container {
     .volunteerHeading {
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
     }
     .row {
       padding-top: 1rem;
@@ -204,29 +172,29 @@ span {
 .servicesSection {
   padding: 3rem 0;
 
-  .container{
+  .container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
-    .row{
-      .servicesLeft{
-        h3{
+    .row {
+      .servicesLeft {
+        h3 {
           font-weight: 700;
           font-size: 21px;
-          padding-bottom: .3rem;
+          padding-bottom: 0.3rem;
         }
-        p{
+        p {
           line-height: 25px;
         }
       }
 
-      .servicesRight{
+      .servicesRight {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        .servicesImage{
+        .servicesImage {
           width: 100%;
         }
       }
@@ -234,9 +202,60 @@ span {
   }
 }
 
-.warmLine{
+.warmLine {
   padding: 3rem 0;
   background: var(--background-color);
+
+  p{
+    color: var(--paragraph-color);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .lineHeading {
+      padding-bottom: 2rem;
+    }
+    .lineParagraph{
+      width: 100%;
+      padding-bottom: 1rem;
+    }
+    .row{
+      .lineLeft{
+        display: flex;
+        align-items: center;
+        .lineImage{
+          width: 100%;
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+          margin-bottom: 2rem;
+        }
+      }
+      .lineRight{
+        padding: 0;
+        .lineRightHeading{
+          padding-bottom: 1.2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: -moz-fit-content;
+          width: fit-content;
+          .black{
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+            text-decoration: underline;
+          }
+          .underline{
+            display: none;
+            width: 28rem;
+            height: 3px;
+            background: var(--main-color);
+          }
+        }
+      }
+    }
+  }
 }
 
 /*
@@ -263,6 +282,20 @@ M E D I A  Q U E R I E S
       }
     }
   }
+  .warmLine {
+  .container {
+    .lineParagraph{
+      width: 90%;
+    }
+    .row{
+      .lineLeft{
+        .lineImage{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -291,6 +324,27 @@ M E D I A  Q U E R I E S
       }
     }
   }
+  .warmLine {
+  .container {
+    .row{
+      .lineLeft{
+        .lineImage{
+          width: 75%;
+        }
+      }
+      .lineRight{
+        .lineRightHeading{
+          .black{
+            text-decoration: none;
+          }
+          .underline{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

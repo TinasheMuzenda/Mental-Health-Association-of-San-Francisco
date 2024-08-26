@@ -3,7 +3,7 @@ import VolunteerHands from "../../public/volunteerHands.jpg";
 import VolunteerLove from "../../public/volunteerLove.jpg";
 import Hands from "../../public/hands.svg";
 import servicesImage from "../../public/healthNetwork.jpg";
-
+import lineImage from "../../public/line.jpg";
 const Page = () => {
   return (
     <>
@@ -119,9 +119,41 @@ const Page = () => {
       </section>
       <section className="warmLine" id="line">
         <div className="container">
-          
+          <div className="lineHeading headings">
+            <h2>WARM LINE</h2>
+          </div>
+          <div className="lineParagraph">
+            <p>
+              Call or Text <span>855-600 WARM (9276)</span> to speak with a
+              counselor 24/7 use our Chat widget at the bottom right to speak to
+              a counselor.
+            </p>
+          </div>
+          <div className="row">
+            <div className="col-md-5 lineLeft">
+              <img src={lineImage} alt="The Warm Line" className="lineImage" />
+            </div>
+            <div className="col-md-7 lineRight">
+              <div className="lineRightHeading">
+                <p className="black">
+                  The MHASF Warm Line is here for you 24/7.
+                </p>
+                  <div className="underline"></div>
+              </div>
+              <p className="lineParagraph">
+                The Warm Line provides accessible mental health support by using
+                the wisdom of lived experience to connect, inspire hope, and
+                empower our community toward unlimited recovery. We have
+                provided assistance via phone and web chat to anyone in need
+                since 2014. Some concerns callers share are challenges with
+                interpersonal relationships, anxiety, pain, depression,
+                finances, alcohol drug use, etc.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+      
     </>
   );
 };
