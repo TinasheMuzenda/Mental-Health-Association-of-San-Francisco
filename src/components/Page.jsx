@@ -138,7 +138,7 @@ const Page = () => {
                 <p className="black">
                   The MHASF Warm Line is here for you 24/7.
                 </p>
-                  <div className="underline"></div>
+                <div className="underline"></div>
               </div>
               <p className="lineParagraph">
                 The Warm Line provides accessible mental health support by using
@@ -153,7 +153,11 @@ const Page = () => {
           </div>
         </div>
       </section>
-      
+      <section className="supportSection" id="support">
+        <div className="container">
+          
+        </div>
+      </section>
     </>
   );
 };

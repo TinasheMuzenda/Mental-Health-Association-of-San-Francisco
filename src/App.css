@@ -258,6 +258,11 @@
   }
 }
 
+.supportSection{
+  padding: 3rem 0;
+  background: var(--main-color);
+}
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
