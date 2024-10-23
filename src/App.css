@@ -52,6 +52,7 @@
       button {
         background: var(--main-color);
         color: var(--primary-color);
+        font-size: 15px;
       }
     }
   }
@@ -63,7 +64,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../public/banner.jpg");
+  background-image: url("../public/banner.png");
   width: 100%;
   height: 90vh;
   display: flex;
@@ -89,6 +90,13 @@
       button {
         background: var(--primary-color);
         color: var(--main-color);
+        font-size: 15px;
+      }
+
+      .transp{
+        background: transparent;
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
       }
     }
   }
@@ -204,9 +212,9 @@
 
 .warmLine {
   padding: 3rem 0;
-  background: var(--background-color);
+  background: d9d9d9;
 
-  p{
+  p {
     color: var(--paragraph-color);
   }
 
@@ -217,23 +225,23 @@
     .lineHeading {
       padding-bottom: 2rem;
     }
-    .lineParagraph{
+    .lineParagraph {
       width: 100%;
       padding-bottom: 1rem;
     }
-    .row{
-      .lineLeft{
+    .row {
+      .lineLeft {
         display: flex;
         align-items: center;
-        .lineImage{
+        .lineImage {
           width: 100%;
           box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
           margin-bottom: 2rem;
         }
       }
-      .lineRight{
+      .lineRight {
         padding: 0;
-        .lineRightHeading{
+        .lineRightHeading {
           padding-bottom: 1.2rem;
           display: flex;
           flex-direction: column;
@@ -241,12 +249,12 @@
           align-items: center;
           width: -moz-fit-content;
           width: fit-content;
-          .black{
+          .black {
             color: var(--secondary-color);
             margin-bottom: 5px;
             text-decoration: underline;
           }
-          .underline{
+          .underline {
             display: none;
             width: 28rem;
             height: 3px;
@@ -258,9 +266,49 @@
   }
 }
 
-.supportSection{
+.supportSection {
   padding: 3rem 0;
   background: var(--main-color);
+}
+
+.footer {
+  padding: 2rem 0 0 0;
+  background: var(--primary-color);
+
+  .container {
+    .row {
+      .footerLeft {
+        padding-left: 2rem;
+        text-align: start;
+        ul {
+          padding: 0;
+          li {
+            padding-top: 1rem;
+            list-style: none;
+          }
+        }
+      }
+      .footerCenter {
+        text-align: center;
+        padding: 1rem 0;
+
+        .footerImage{
+          width: 70%;
+        }
+      }
+      .footerRight {
+        padding-right: 2rem;
+        text-align: end;
+        ul {
+          padding: 0;
+          li {
+            padding-top: 1rem;
+            list-style: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 /*
@@ -288,19 +336,19 @@ M E D I A  Q U E R I E S
     }
   }
   .warmLine {
-  .container {
-    .lineParagraph{
-      width: 90%;
-    }
-    .row{
-      .lineLeft{
-        .lineImage{
-          margin-bottom: 0;
+    .container {
+      .lineParagraph {
+        width: 90%;
+      }
+      .row {
+        .lineLeft {
+          .lineImage {
+            margin-bottom: 0;
+          }
         }
       }
     }
   }
-}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -330,26 +378,26 @@ M E D I A  Q U E R I E S
     }
   }
   .warmLine {
-  .container {
-    .row{
-      .lineLeft{
-        .lineImage{
-          width: 75%;
-        }
-      }
-      .lineRight{
-        .lineRightHeading{
-          .black{
-            text-decoration: none;
+    .container {
+      .row {
+        .lineLeft {
+          .lineImage {
+            width: 75%;
           }
-          .underline{
-            display: block;
+        }
+        .lineRight {
+          .lineRightHeading {
+            .black {
+              text-decoration: none;
+            }
+            .underline {
+              display: block;
+            }
           }
         }
       }
     }
   }
-}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

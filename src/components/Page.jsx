@@ -14,7 +14,7 @@ const Page = () => {
               Mental Health Association of <span>San Francisco</span>
             </h1>
             <div className="buttons">
-              <button>Contact Us</button>
+              <button className='transp'>Contact Us</button>
               <button>Sign Up</button>
             </div>
           </div>

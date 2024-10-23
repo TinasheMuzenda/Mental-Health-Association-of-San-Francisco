@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../App.css";
 import Logo from "../../public/logo.svg";
 
 const Navbar = () => {
@@ -69,7 +68,7 @@ const Navbar = () => {
             >
               Warm line 855-600-WARM
             </a>
-            <button>SUPPORT US</button>
+            <button>Support Us</button>
           </nav>
         </div>
       </header>
