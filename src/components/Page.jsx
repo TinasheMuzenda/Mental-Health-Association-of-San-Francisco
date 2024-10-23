@@ -156,8 +156,25 @@ const Page = () => {
       <section className="supportSection" id="support">
         <div className="container">
           <div className="box">
-            <h2>SUPPORT OUR CASE</h2>
-            <h3>Help sustain our frontline workers</h3>
+            <div className="inside">
+              <h2>SUPPORT OUR CASE</h2>
+              <h3>Help sustain our frontline workers</h3>
+              <p>
+                As a result of the COVID-19 pandemic ,MHASF services have
+                significantly increased Our Warm Line team has been working
+                non-stop to provide emotional and mental support to the entire
+                state of CA. If you are able to donate, we can hire more people
+                to meet the demand of our calls. We appreciate your help and
+                support during this difficult timeThe COVID-19 pandemic has
+                skyrocketed the demand for MHASF's mental health services. Our
+                Warm Line team has been tirelessly providing emotional and
+                mental support to Californians. To meet this growing need, we
+                urge your generous support to expand our team. Your donation
+                will enable us to hire additional staff, ensuring that no one is
+                left without the vital assistance they need during this
+                challenging time.
+              </p>
+            </div>
           </div>
         </div>
       </section>

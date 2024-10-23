@@ -93,7 +93,7 @@
         font-size: 15px;
       }
 
-      .transp{
+      .transp {
         background: transparent;
         border: 2px solid var(--primary-color);
         color: var(--primary-color);
@@ -269,6 +269,25 @@
 .supportSection {
   padding: 3rem 0;
   background: var(--main-color);
+  .container {
+    .box {
+      width: 100%;
+      border: 5px solid var(--primary-color);
+
+      .inside {
+        padding: 1rem 0rem;
+        text-align: center;
+        color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        h2 {
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }
 
 .footer {
@@ -292,7 +311,7 @@
         text-align: center;
         padding: 1rem 0;
 
-        .footerImage{
+        .footerImage {
           width: 70%;
         }
       }
@@ -349,6 +368,16 @@ M E D I A  Q U E R I E S
       }
     }
   }
+
+  .supportSection {
+  .container {
+    .box {
+      .inside {
+        padding: 3rem 5rem;
+      }
+    }
+  }
+}
 }
 
 /* Large devices (desktops, 992px and up) */
