@@ -212,7 +212,7 @@
 
 .warmLine {
   padding: 3rem 0;
-  background: d9d9d9;
+  background: #d9d9d985;
 
   p {
     color: var(--paragraph-color);

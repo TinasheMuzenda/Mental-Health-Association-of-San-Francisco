@@ -14,7 +14,7 @@ const Page = () => {
               Mental Health Association of <span>San Francisco</span>
             </h1>
             <div className="buttons">
-              <button className='transp'>Contact Us</button>
+              <button className="transp">Contact Us</button>
               <button>Sign Up</button>
             </div>
           </div>
@@ -155,7 +155,10 @@ const Page = () => {
       </section>
       <section className="supportSection" id="support">
         <div className="container">
-          
+          <div className="box">
+            <h2>SUPPORT OUR CASE</h2>
+            <h3>Help sustain our frontline workers</h3>
+          </div>
         </div>
       </section>
     </>
