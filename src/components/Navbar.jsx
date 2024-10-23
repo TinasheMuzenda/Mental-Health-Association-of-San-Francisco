@@ -24,7 +24,7 @@ const Navbar = () => {
           </picture>
           <nav className="navLinks">
             <a
-              href="#"
+              href="#banner"
               onClick={() => {
                 handleClick(1);
               }}
@@ -33,7 +33,7 @@ const Navbar = () => {
               HOME
             </a>
             <a
-              href="#"
+              href="#about"
               onClick={() => {
                 handleClick(2);
               }}
@@ -42,7 +42,7 @@ const Navbar = () => {
               ABOUT US
             </a>
             <a
-              href="#"
+              href="#volunteer"
               onClick={() => {
                 handleClick(3);
               }}
@@ -51,7 +51,7 @@ const Navbar = () => {
               TAKE ACTION
             </a>
             <a
-              href="#"
+              href="#services"
               onClick={() => {
                 handleClick(4);
               }}
@@ -60,7 +60,7 @@ const Navbar = () => {
               SERVICES
             </a>
             <a
-              href="#"
+              href="tel: 0718218456"
               onClick={() => {
                 handleClick(5);
               }}

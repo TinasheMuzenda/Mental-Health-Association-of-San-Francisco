@@ -3,7 +3,7 @@ import VolunteerHands from "../../public/volunteerHands.jpg";
 import VolunteerLove from "../../public/volunteerLove.jpg";
 import Hands from "../../public/hands.svg";
 import servicesImage from "../../public/healthNetwork.jpg";
-import lineImage from "../../public/line.jpg";
+import lineImage from "../../public/LINE.jpg";
 const Page = () => {
   return (
     <>
